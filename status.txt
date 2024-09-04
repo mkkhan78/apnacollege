@@ -1,0 +1,12 @@
+untracked  --> new file(s) that git doesn't yet track.
+modified   --> change in the file(s).
+staged     --> file is ready to be commited.
+unmodified --> no change in the file(s).
+
+commands:
+add - add new or changed file(s) in your working directory to the git staging area.
+    git add <file name>
+    git add .  --> will add all files in the directory.
+
+commit - it is the record of change.
+    git commit -m "<description>"
