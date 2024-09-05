@@ -4,9 +4,58 @@ staged     --> file is ready to be commited.
 unmodified --> no change in the file(s).
 
 commands:
-add - add new or changed file(s) in your working directory to the git staging area.
+add --> add new or changed file(s) in your working directory to the git staging area.
     git add <file name>
     git add .  --> will add all files in the directory.
 
-commit - it is the record of change.
+commit --> it is the record of change.
     git commit -m "<description>"
+
+push --> upload local repo to remote repo.
+    git push origin main
+
+git remote add --> to add new remote repo.
+    git remote add origin <repo link>
+    git remote -v (to verify remore repo)
+
+git branch --> to check current branch
+
+git branch -M <new branch name> --> to rename branch
+
+git push -u origin <branch name> --> -u is used to set upstream branch.
+once upstream is set then we don't need to mention branch name while pushing the code 
+as current branch is set as default.
+
+git checkout/switch <branch name> --> to navigate to another branch.
+
+git checkout -b <new branch name> --> to create and navigate to new branch.
+
+git branch -d <branch name> --> to delete the branch.
+we can't delete current branch we are currently in.
+
+git diff <branch name> --> to compare commits, branches, files and more
+
+git merge <branch name> --> to merge 2 branches.
+
+git pull --> used to fetch and download content from remote repo and immediately 
+update the local repo to match that content.
+    git pull origin <branch name>
+    origin --> remote name
+
+git log --> to check all commi logs
+
+git reset --> to unstage or undo staged file (if changes have been added i.e. git add .)
+    git reset <file name> --> to unstage a particular file
+    git reset --> to unstage all files
+
+git reset HEAD~1 --> to unstage committed file (if changes have been committed i.e., git commit)
+    git reset HEAD~1 --> it will reset the latest commit and revert back to last commit and unstage the changes.
+    git reset <git hash id/commit id> --> to revert back to a particular commit.
+    git reset --hard <commit id> --> will revert back to a particular commit and also make changes in the code 
+    according to that particular commit.
+
+merge vs squash vs rebase --> https://www.youtube.com/watch?v=rFRtsiQEJZw
+
+
+
+
